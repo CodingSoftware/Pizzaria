@@ -14,5 +14,6 @@ exit;}
 else {echo "<h1>Parabéns!! A conexão ao banco de dados ocorreu normalmente!.</h1>";}
 mysql_close(); 
 ?>
+  <h1>ola</h1>
 </body>
 </html>
