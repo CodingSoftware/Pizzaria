@@ -1,0 +1,82 @@
+h4{
+		font-size: 40px;
+}
+
+.card{
+margin: 2%
+}
+.card p{
+	font-size: 25px;
+}
+a{
+	font-size: 13px;
+}
+img{
+	float:left;
+}
+
+
+.modal-dialog{
+		width: 100%;
+		position:relative;
+		margin: auto;	
+}
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 1500px;
+}}
+.modal-content{
+	    width: 100%;
+    height: 100%;
+		position:relative;
+}
+.modal{
+	  	    width: 100%;
+    height: 100%;
+		position:fixed;
+}
+footer p {
+	padding-top:3%;
+color: white;
+text-align: center;
+}
+header{
+	
+		height: 0%;
+		
+		margin: -0% 0% 15% 0%;
+}
+footer{	background: rgb(121, 116, 116);
+height: 20%
+}
+
+.list-group-item.active{
+
+	border-color:transparent;
+	box-shadow: rgb(248, 49, 49) 0px 0px 20px;
+	color:black;
+}
+
+.del{
+  width: 50%;
+ 
+}
+
+.botao {
+    padding-left: 37%;
+    position: relative;
+    top: -15px;
+}
+
+#dialog{
+  margin:auto;
+
+}
+
+.alert{
+  margin: auto;
+
+}
+.modal-footer button{
+      margin: auto;
+}
