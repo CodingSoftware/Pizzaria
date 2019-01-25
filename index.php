@@ -20,7 +20,7 @@
   <body class="bg-danger">
 
 
-	<header> 	<h4 class="text-center text-light"> Monte Sua Pizza</h4> </header>
+	<header><h4 class="text-center text-light"> Monte Sua Pizza</h4></header>
 	<div class="container" id="monte">
 
     			<div class="card bg-light">
