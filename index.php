@@ -4,25 +4,25 @@
 
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Monte Sua Pizza</title>
-  
+    <title>Monte sua Pizza</title>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
     <link href="style.css" rel="stylesheet" type="text/css" />
-    
 
- 
+
+
   </head>
- 
+
   <body class="bg-danger">
 
 
 	<header> 	<h4 class="text-center text-light"> Monte Sua Pizza</h4> </header>
 	<div class="container" id="monte">
-			
+
     			<div class="card bg-light">
             <div class="anterior-tam">
       			<div class="selecionado-tam">
@@ -30,7 +30,7 @@
         					<img class="rounded-circle" src="image/home/caixa.jpg">
         					<p class="card-text">Tamanho</p>
 									<!-- Botão Modal Tamanho -->
-									 
+
 
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalTamanho">
   Selecionar
@@ -38,15 +38,15 @@
 </div>
 
       				</div>
-              
-              <div class="botao botao-tam"> 
-          
+
+              <div class="botao botao-tam">
+
               </div>
-              
+
 
               </div>
     	 	 </div>
-				
+
 
 					<div class="card bg-light">
                <div class="anterior-bord">
@@ -60,8 +60,8 @@
 </button>
       	  	</div>
               	  </div>
-                   <div class="botao botao-bord"> 
-          
+                   <div class="botao botao-bord">
+
                    </div>
     	 	       </div>
 					  </div>
@@ -77,7 +77,7 @@
 </button>
       				</div>
       			</div>
- <div class="botao botao-tipo"> 
+ <div class="botao botao-tipo">
             </div>
             </div>
     	      	 </div>
@@ -94,7 +94,7 @@
 </button>
       					</div>
       			</div>
- <div class="botao botao-sabor"> 
+ <div class="botao botao-sabor">
             </div>
             </div>
     	      	 </div>
@@ -110,7 +110,7 @@
 </button>
       				</div>
       			</div>
- <div class="botao botao-pagamento"> 
+ <div class="botao botao-pagamento">
             </div>
             </div>
     	      	 </div>
@@ -127,11 +127,11 @@
       </div>
       <div class="modal-body">
 					<!-- conteudo do modal -->
-					
+
 <div class="list-group">
   	<div class="list-group-item card bg-light">
       				<div class="card-body text-center">
-        					<img class="rounded-circle" src="image/tamanho/f.png" 
+        					<img class="rounded-circle" src="image/tamanho/f.png"
 									width="80px" height="80px">
         					<p class="card-text">Familia</p>
 									<p>R$ 44,90</p>
@@ -142,16 +142,16 @@
 
 					<div class="list-group-item card bg-light">
       				<div class="card-body text-center">
-        					<img class="rounded-circle" src="image/tamanho/g.png" 
+        					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Grande</p>
 									<p>R$ 34,90</p>
       				</div>
     	 	 </div>
-					
+
 					<div class="list-group-item card bg-light">
       				<div class="card-body text-center">
-        					<img class="rounded-circle" src="image/tamanho/g.png" 
+        					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Média</p>
 									<p>R$ 24,90</p>
@@ -159,18 +159,18 @@
     	 	 </div>
 				<div class="list-group-item card bg-light">
       				<div class="card-body text-center">
-        					<img class="rounded-circle" src="image/tamanho/g.png" 
+        					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Pequena</p>
 									<p>R$ 14,90</p>
       				</div>
     	 	 </div>
 					</div>
-   
+
 
 			 <div class="alert-tam"></div>
       <div class="modal-footer">
-       
+
 
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
         <button type="button" class="btn btn-primary salvar-tam">Salvar</button>
@@ -179,7 +179,7 @@
   </div>
 </div>
 </div>
-  
+
 <!-- Borda -->
 <div class="modal fade bg-light" id="ModalBorda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -207,7 +207,7 @@
 									<p>R$ 2,90</p>
       				</div>
     	 	 </div>
-					
+
       </div>
       	 <div class="alert-bord"></div>
       <div class="modal-footer">
@@ -316,4 +316,3 @@
 
 
     <script src="script.js"></script>
-  
