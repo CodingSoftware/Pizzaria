@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Monte sua Pizza</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-
-    <link href="style.css" rel="stylesheet" type="text/css" />
 
 
 
   </head>
 
-  <body class="bg-danger">
+  <body>
 
-
-	<header><h4 class="text-center text-light"> Monte Sua Pizza</h4></header>
+<?php require_once('_php/header.php'); ?>
+	<header><h4 class="text-center text-black"> Monte Sua Pizza</h4></header>
 	<div class="container" id="monte">
 
     			<div class="card bg-light">
@@ -113,10 +105,33 @@
  <div class="botao botao-pagamento">
             </div>
             </div>
-    	      	 </div>
+          </div>
+            <div class="card bg-light">
+
+
+                <div class="card-body mt text-center">
+                    <img class="rounded-circle" src="image/valor/valor.png" width="80px" height="80px">
+                    <p class="card-text">Valor Total</p>
+					  <h5 class="card-text">R$ 0,00</h5>
+                    <!-- Botão Modal Tamanho -->
+
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modalpizza">
+            Ver Pizza
+            </button>
+            <button type="button" class="btn btn-primary">
+            Fazer Pedido
+            </button>
+
+            </div>
+
+            </div>
+	           </div>
+             </div>
+
 	                                       <!-- Seção Modal -->
 <!-- Tamanho -->
-<div class="modal fade bg-light" id="ModalTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="ModalTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -181,7 +196,7 @@
 </div>
 
 <!-- Borda -->
-<div class="modal fade bg-light" id="ModalBorda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="ModalBorda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -292,7 +307,7 @@
       				<div class="card-body text-center">
         					<img class="rounded-circle" src="image/pagamento/cartao.jpeg">
         					<p class="card-text">Cartão</p>
-										<p>R$ 0,00</p>
+
       				</div>
     	 	 </div>
 
@@ -300,7 +315,7 @@
       				<div class="card-body text-center">
         					<img class="rounded-circle" src="image/pagamento/dinheiro.jpg">
         					<p class="card-text">Dinheiro</p>
-                    	<p>R$ 0,00</p>
+
       				</div>
     	 	 </div>
       </div>
@@ -314,5 +329,54 @@
   </div>
 </div>
 
+<!-- Tipo -->
+<div class="modal fade" id="Modalpizza" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Meu Carrinho (1)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-pagamento">
+        <div class="list-group">
+
+      				<div class="card-pagamento card-body text-center">
+					<table class="table table-bordered">
+
+    <tbody>
+      <tr>
+        <td> <img class="rounded-circle" src="image/tipo/salgado.png"></td>
+        <td> <h6>Tamanho: <b>Fámilia</b>, Sabor: <b>Frango</b>, Borda: <b>Recheada</b>, Sabor: <b>Frango</b>, Borda: <b>Recheada</b></h6></td>
+        <tr><td colspan="2" class="icon-full">
+
+          <i class="far fa-trash-alt fa-2x "></i>
+          <input class="form-control" type="number" value="1" id="example-number-input">
+		   <br> <br>
+		 <h5> <strong>VALOR: </strong>R$20,00</h5>
+      </td></tr></tr>
+
+
+    </tbody>
+    </table>
+
+  <br><br>
+ <h6> Endereço: <b>Rua Vereador João Silva</b></h6>
+ <h6>Nome: <b>Matheus</b></h6>
+      				</div>
+    	 	 </div>
+
+
+      </div>
+       <div class="alert-tipo"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary reiniciar-pizza" data-dismiss="modal">Continuar montando</button>
+        <button type="button" class="btn btn-primary salvar-pizza">Fazer pedido</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
     <script src="script.js"></script>
