@@ -10,7 +10,7 @@
   </head>
 
   <body>
-
+<?php require_once('_php/variaveis.php'); ?>
 <?php require_once('_php/header.php'); ?>
 	<header><h4 class="text-center text-black"> Monte Sua Pizza</h4></header>
 	<div class="container" id="monte">
@@ -149,7 +149,7 @@
         					<img class="rounded-circle" src="image/tamanho/f.png"
 									width="80px" height="80px">
         					<p class="card-text">Familia</p>
-									<p>R$ 44,90</p>
+									<p><?php echo "R$ $f"; ?></p>
       				</div>
     	 	 </div>
 
