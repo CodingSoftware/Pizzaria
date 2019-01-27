@@ -149,7 +149,7 @@
         					<img class="rounded-circle" src="image/tamanho/f.png"
 									width="80px" height="80px">
         					<p class="card-text">Familia</p>
-									<p><?php echo "R$ $f"; ?></p>
+									<p><?php echo $f?></p>
       				</div>
     	 	 </div>
 
