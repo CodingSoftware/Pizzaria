@@ -149,7 +149,7 @@
         					<img class="rounded-circle" src="image/tamanho/f.png"
 									width="80px" height="80px">
         					<p class="card-text">Familia</p>
-									<p><?php echo $f?></p>
+									<p><?php  echo $f?></p>
       				</div>
     	 	 </div>
 
@@ -160,7 +160,7 @@
         					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Grande</p>
-									<p>R$ 34,90</p>
+									<p><?php echo $g?></p>
       				</div>
     	 	 </div>
 
@@ -169,7 +169,7 @@
         					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Média</p>
-									<p>R$ 24,90</p>
+									<p><?php echo $m?></p>
       				</div>
     	 	 </div>
 				<div class="list-group-item card bg-light">
@@ -177,7 +177,7 @@
         					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Pequena</p>
-									<p>R$ 14,90</p>
+									<p><?php echo $p?></p>
       				</div>
     	 	 </div>
 					</div>
@@ -211,7 +211,7 @@
       				<div class="card-body text-center">
         					<img class="rounded-circle" src="image/borda/normal.jpg">
         					<p class="card-text">Normal</p>
-									<p>R$ 0,00</p>
+									<p><?php echo $n?></p>
       				</div>
     	 	 </div>
 
@@ -219,7 +219,7 @@
       				<div class="card-body text-center">
         					<img class="rounded-circle" src="image/borda/recheada.jpg">
         					<p class="card-text">Recheada</p>
-									<p>R$ 2,90</p>
+									<p><?php echo $r?></p>
       				</div>
     	 	 </div>
 
@@ -354,7 +354,7 @@
           <i class="far fa-trash-alt fa-2x "></i>
           <input class="form-control" type="number" value="1" id="example-number-input">
 		   <br> <br>
-		 <h5> <strong>VALOR: </strong>R$20,00</h5>
+		 <h5> <strong>VALOR: </strong><?php echo $vt?></h5>
       </td></tr></tr>
 
 
