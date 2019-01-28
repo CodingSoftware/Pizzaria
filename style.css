@@ -8,8 +8,9 @@
 
 .icon-full .form-control{
 	display: inline;
-	width: 10%;
-	margin-left: 3%;
+	width: 12%;
+
+
 
 }
 .icon-full{
@@ -17,20 +18,21 @@
 
 }
 
+label{
+	display: block;
+}
+
 body{
 	background:#eeeeee;
 
 }
 
-h4{
-		font-size: 40px;
-}
 
 .card{
 margin: 2%
 }
 .card p{
-	font-size: 25px;
+	font-size: 22px;
 }
 
 img{
@@ -60,13 +62,16 @@ height: 20%
 .list-group-item.active{
 
 	border-color:transparent;
-	box-shadow: rgb(248, 49, 49) 0px 0px 20px;
+	box-shadow: rgb(26, 26, 26) 0px 0px 20px;
 	color:black;
 }
 
 .del{
-  width: 50%;
-
+  width: 30%;
+  text-align:center;
+	position:relative;
+	margin: auto;
+	left:4%;
 }
 
 .botao {
@@ -86,15 +91,10 @@ height: 20%
 }
 
 .fa-trash-alt{
-color:#0040ff;
-position:relative;
-top:8px;
-}
-
-.fa-trash-alt:hover{
-	color:#0033cc;
+color:white;
 
 }
+
 
 .table td , .table th{
 
@@ -104,4 +104,37 @@ top:8px;
 h5 {
 font-size:1.5rem;
 
+}
+
+.valor1{
+position:relative;
+left: 4%;
+
+}
+
+.valor2{
+position:relative;
+left:7%;
+
+}
+.valortotal{
+
+text-align:left;
+font-size:1.2rem;
+color: green;
+
+}
+
+.descricao{
+text-align:left;
+}
+.remover{
+position:relative;
+top:-3px;
+
+}
+
+input[type=checkbox], input[type=radio]{
+
+display:none;
 }
