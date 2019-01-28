@@ -10,7 +10,7 @@
   </head>
 
   <body>
-
+<?php require_once('_php/variaveis.php'); ?>
 <?php require_once('_php/header.php'); ?>
 
 </nav>
@@ -114,7 +114,7 @@
                 <div class="card-body mt text-center">
                     <img class="rounded-circle" src="image/valor/valor.png" width="80px" height="80px">
                     <p class="card-text">Valor Total</p>
-					  <p class="card-text"><strong>R$ 0,00</strong></p>
+					  <p class="card-text"><strong> <?php echo $vt?> </strong></p>
                     <!-- Botão Modal Tamanho -->
 
 
@@ -129,7 +129,7 @@
 
             </div>
 	           </div>
-            
+
 
 	                                       <!-- Seção Modal -->
 <!-- Tamanho -->
@@ -151,7 +151,11 @@
         					<img class="rounded-circle" src="image/tamanho/f.png"
 									width="80px" height="80px">
         					<p class="card-text">Familia</p>
-									<p><strong>R$ 44,90</strong></p>
+
+									<p><strong> <?php echo $f?> </strong></p>
+
+
+
       				</div>
     	 	 </div>
 
@@ -162,7 +166,7 @@
         					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Grande</p>
-									<p><strong>R$ 34,90</strong></p>
+									<p><strong><?php echo $g?></strong></p>
       				</div>
     	 	 </div>
 
@@ -171,7 +175,7 @@
         					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Média</p>
-									<p><strong>R$ 24,90</strong></p>
+									<p><strong><?php echo $m?></strong></p>
       				</div>
     	 	 </div>
 				<div class="list-group-item card bg-light">
@@ -179,7 +183,7 @@
         					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Pequena</p>
-									<p><strong>R$ 14,90</strong></p>
+									<p><strong><?php echo $p?></strong></p>
       				</div>
     	 	 </div>
 					</div>
@@ -351,15 +355,15 @@
       <tr>
         <td> <img class="rounded-circle" src="image/tipo/salgado.png"></td>
         <td> <h6 class="descricao">Tamanho: <b>Fámilia</b>, Sabor: <b>Frango</b>, Borda: <b>Recheada</b>, Sabor: <b>Frango</b>, Borda: <b>Recheada</b>.</h6> <h5 class="valortotal"><strong>R$ 20,00</strong></h5></td>
-		
+
         <tr><td colspan="2" class="icon-full">
 		<small >Quantidade:</small>
 <input class="form-control text-center" type="number" value="1" id="example-number-input">
           <button type="button" class="btn btn-danger remover"><i class="far fa-trash-alt"></i></button>
-          
-		  
+
+
 		   <br> <br>
-		 
+
       </td></tr></tr>
 
 
