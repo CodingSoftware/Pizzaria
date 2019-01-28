@@ -9,15 +9,15 @@ $(document).ready(function(){
 //Adiciona classe active no objeto selecionado
 	  $(this).addClass("active");
 //Adiciona atributo no botão salvar do card tamanho
-    
+
       });
 
 
-                                                    
+
 //Escuta Ações no botao Salvar do card tamanho
 $(".salvar-tam").click(function(){
   //Verifica se card esta ativo, se sim executa as ações abaixo
-  if ($(".list-group-item").hasClass("active")) {  
+  if ($(".list-group-item").hasClass("active")) {
     //variavel sel recebe card ativo
 	var seltam = $(".active").html();
   //classe novo recebe conteudo da variavel sel
@@ -29,7 +29,7 @@ $(".salvar-tam").click(function(){
 
       $(".modal").modal('hide');
 
-  } 
+  }
 //se não
   else{
     //Mostra Alerta
@@ -42,7 +42,7 @@ $(".salvar-tam").click(function(){
 //Escuta Ações no botao Salvar do card Borda
 $(".salvar-bord").click(function(){
   //Verifica se card esta ativo, se sim executa as ações abaixo
-  if ($(".list-group-item").hasClass("active")) {  
+  if ($(".list-group-item").hasClass("active")) {
     //variavel sel recebe card ativo
 	var selbord = $(".active").html();
   //classe novo recebe conteudo da variavel sel
@@ -54,7 +54,7 @@ $(".salvar-bord").click(function(){
 
       $(".modal").modal('hide');
 
-  } 
+  }
 //se não
   else{
     //Mostra Alerta
@@ -66,7 +66,7 @@ $(".salvar-bord").click(function(){
   //Escuta Ações no botao Salvar do card tipo
 $(".salvar-tipo").click(function(){
   //Verifica se card esta ativo, se sim executa as ações abaixo
-  if ($(".list-group-item").hasClass("active")) {  
+  if ($(".list-group-item").hasClass("active")) {
     //variavel seltipo recebe card ativo
 	var seltipo = $(".active").html();
   //classe selecionado recebe conteudo da variavel seltipo
@@ -78,7 +78,7 @@ $(".salvar-tipo").click(function(){
 
       $(".modal").modal('hide');
 
-  } 
+  }
 //se não
   else{
     //Mostra Alerta
@@ -90,7 +90,7 @@ $(".salvar-tipo").click(function(){
 //Escuta Ações no botao Salvar do card tipo
 $(".salvar-pagamento").click(function(){
   //Verifica se card esta ativo, se sim executa as ações abaixo
-  if ($(".list-group-item").hasClass("active")) {  
+  if ($(".list-group-item").hasClass("active")) {
     //variavel seltipo recebe card ativo
 	var seltipo = $(".active").html();
   //classe selecionado recebe conteudo da variavel seltipo
@@ -102,7 +102,7 @@ $(".salvar-pagamento").click(function(){
 
       $(".modal").modal('hide');
 
-  } 
+  }
 //se não
   else{
     //Mostra Alerta
@@ -127,27 +127,27 @@ $(".salvar-pagamento").click(function(){
 
 
 
- 
+
 
 //card tamanho volta ao conteudo anterior
    var anttam = $(".anterior-tam").html();
    function executartam(){
    $(".anterior-tam").html(anttam);
-   
+
   };
-    
+
 //card borda volta ao conteudo anterior
    var antbord = $(".anterior-bord").html();
    function executarbord(){
    $(".anterior-bord").html(antbord);
-   
+
   };
 
 //card tipo volta ao conteudo anterior
    var anttipo = $(".anterior-tipo").html();
    function executartipo(){
    $(".anterior-tipo").html(anttipo);
-   
+
   };
 
 
@@ -155,5 +155,24 @@ $(".salvar-pagamento").click(function(){
    var antpagamento = $(".anterior-pagamento").html();
    function executarpagamento(){
    $(".anterior-pagamento").html(antpagamento);
-   
+
   };
+
+  
+  jQuery(document).ready(function(){
+		jQuery('#ajax_form').submit(function(){
+			var dados = jQuery( this ).serialize();
+
+			jQuery.ajax({
+				type: "POST",
+				url: "index.php",
+				data: dados,
+				success: function( data )
+				{
+					alert( data );
+				}
+			});
+
+			return false;
+		});
+	});

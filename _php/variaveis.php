@@ -1,14 +1,16 @@
 <?php
 //Tamanho
-$tamanho="R$ ".number_format(0,2,",",".");
-$f= "R$ ".number_format(44.9,2,",",".");
-$g= "R$ ".number_format(34.9,2,",",".");
-$m= "R$ ".number_format(24.9,2,",",".");
-$p= "R$ ".number_format(14.9,2,",",".");
+$t=0;
+$f= 44.9;
+$g= 34.9;
+$m= 24.9;
+$p= 14.9;
 
 //borda
-$borda="R$ ".number_format(0,2,",",".");
-$n= "R$ ".number_format(0,2,",",".");
-$r= "R$ ".number_format(2.9,2,",",".");
-$vt=$tamanho+$borda;
+
+$b=0;
+$n=0;
+$r=2.9;
+
+
  ?>
