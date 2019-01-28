@@ -33,9 +33,6 @@
         <li class="nav-item">
           <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Promoção da Semana</a>
-        </li>
 		<li class="nav-item">
           <a class="nav-link" href="#">Cardápio</a>
         </li>
@@ -43,10 +40,10 @@
           <a class="nav-link" href="#">Monte sua Pizza</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
+          <a class="nav-link" href="contato.html">Contato</a>
         </li>
       		 <li class="nav-item">
-          <a class="nav-link" href="#">Cadastre-se</a>
+          <a class="nav-link" href="cadastro.html">Cadastre-se</a>
         </li>
 			<li class="nav-item">
 				<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>

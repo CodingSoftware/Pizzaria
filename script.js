@@ -23,7 +23,7 @@ $(".salvar-tam").click(function(){
   //classe novo recebe conteudo da variavel sel
   $(".selecionado-tam").html(seltam);
   //Classe botao recebe conteudo html pré-definido
-  $(".botao-tam").html('<button type="button" onclick="executartam()" class="btn btn-success del">Remover</button>');
+  $(".botao-tam").html('<button type="button" onclick="executartam()" class="btn btn-danger del"><i class="far fa-trash-alt"></i></button>');
      //Remove classe active ao salvar
      $(".active").removeClass( "active" );
 
@@ -48,7 +48,7 @@ $(".salvar-bord").click(function(){
   //classe novo recebe conteudo da variavel sel
   $(".selecionado-bord").html(selbord);
   //Classe botao recebe conteudo html pré-definido
-  $(".botao-bord").html('<button type="button" onclick="executarbord()" class="btn btn-success del">Remover</button>');
+  $(".botao-bord").html('<button type="button" onclick="executarbord()" class="btn btn-danger del"><i class="far fa-trash-alt"></i></button>');
      //Remove classe active ao salvar
      $(".active").removeClass( "active" );
 
@@ -72,7 +72,7 @@ $(".salvar-tipo").click(function(){
   //classe selecionado recebe conteudo da variavel seltipo
   $(".selecionado-tipo").html(seltipo);
   //Classe botao recebe conteudo html pré-definido
-  $(".botao-tipo").html('<button type="button" onclick="executartipo()" class="btn btn-success del">Remover</button>');
+  $(".botao-tipo").html('<button type="button" onclick="executartipo()" class="btn btn-danger del"><i class="far fa-trash-alt"></i></button>');
      //Remove classe active ao salvar
      $(".active").removeClass( "active" );
 
@@ -96,7 +96,7 @@ $(".salvar-pagamento").click(function(){
   //classe selecionado recebe conteudo da variavel seltipo
   $(".selecionado-pagamento").html(seltipo);
   //Classe botao recebe conteudo html pré-definido
-  $(".botao-pagamento").html('<button type="button" onclick="executarpagamento()" class="btn btn-success del">Remover</button>');
+  $(".botao-pagamento").html('<button type="button" onclick="executarpagamento()" class="btn btn-danger del"><i class="far fa-trash-alt"></i></button>');
      //Remove classe active ao salvar
      $(".active").removeClass( "active" );
 

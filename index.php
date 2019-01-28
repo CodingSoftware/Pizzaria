@@ -12,7 +12,9 @@
   <body>
 
 <?php require_once('_php/header.php'); ?>
-	<header><h4 class="text-center text-black"> Monte Sua Pizza</h4></header>
+
+</nav>
+	<header><h4 class="lead text-center"> Monte sua <strong>Pizza</strong>,qualquer duvida entre em contato conosco.</h4></header>
 	<div class="container" id="monte">
 
     			<div class="card bg-light">
@@ -112,14 +114,14 @@
                 <div class="card-body mt text-center">
                     <img class="rounded-circle" src="image/valor/valor.png" width="80px" height="80px">
                     <p class="card-text">Valor Total</p>
-					  <h5 class="card-text">R$ 0,00</h5>
+					  <p class="card-text"><strong>R$ 0,00</strong></p>
                     <!-- Botão Modal Tamanho -->
 
 
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modalpizza">
+            <button type="button" class="btn btn-primary valor1" data-toggle="modal" data-target="#Modalpizza">
             Ver Pizza
             </button>
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-primary valor2">
             Fazer Pedido
             </button>
 
@@ -127,7 +129,7 @@
 
             </div>
 	           </div>
-             </div>
+            
 
 	                                       <!-- Seção Modal -->
 <!-- Tamanho -->
@@ -149,7 +151,7 @@
         					<img class="rounded-circle" src="image/tamanho/f.png"
 									width="80px" height="80px">
         					<p class="card-text">Familia</p>
-									<p>R$ 44,90</p>
+									<p><strong>R$ 44,90</strong></p>
       				</div>
     	 	 </div>
 
@@ -160,7 +162,7 @@
         					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Grande</p>
-									<p>R$ 34,90</p>
+									<p><strong>R$ 34,90</strong></p>
       				</div>
     	 	 </div>
 
@@ -169,7 +171,7 @@
         					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Média</p>
-									<p>R$ 24,90</p>
+									<p><strong>R$ 24,90</strong></p>
       				</div>
     	 	 </div>
 				<div class="list-group-item card bg-light">
@@ -177,7 +179,7 @@
         					<img class="rounded-circle" src="image/tamanho/g.png"
 									width="80px" height="80px">
         					<p class="card-text">Pequena</p>
-									<p>R$ 14,90</p>
+									<p><strong>R$ 14,90</strong></p>
       				</div>
     	 	 </div>
 					</div>
@@ -188,7 +190,7 @@
 
 
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary salvar-tam">Salvar</button>
+        <button type="button" class="btn btn-success salvar-tam">Salvar</button>
       </div>
     </div>
   </div>
@@ -211,7 +213,7 @@
       				<div class="card-body text-center">
         					<img class="rounded-circle" src="image/borda/normal.jpg">
         					<p class="card-text">Normal</p>
-									<p>R$ 0,00</p>
+									<p><strong>R$ 0,00</strong></p>
       				</div>
     	 	 </div>
 
@@ -219,7 +221,7 @@
       				<div class="card-body text-center">
         					<img class="rounded-circle" src="image/borda/recheada.jpg">
         					<p class="card-text">Recheada</p>
-									<p>R$ 2,90</p>
+									<p><strong>R$ 2,90</strong></p>
       				</div>
     	 	 </div>
 
@@ -227,7 +229,7 @@
       	 <div class="alert-bord"></div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary salvar-bord">salvar</button>
+        <button type="button" class="btn btn-success salvar-bord">Salvar</button>
       </div>
     </div>
   </div>
@@ -249,7 +251,7 @@
       				<div class="card-body text-center">
         					<img class="rounded-circle" src="image/tipo/doce.jpg">
         					<p class="card-text">Doce</p>
-										<p>R$ 0,00</p>
+										<p><strong>R$ 0,00</strong></p>
       				</div>
     	 	 </div>
 
@@ -257,14 +259,14 @@
       				<div class="card-body text-center">
         					<img class="rounded-circle" src="image/tipo/salgado.png">
         					<p class="card-text">Salgado</p>
-                    	<p>R$ 0,00</p>
+                    	<p><strong>R$ 0,00</strong></p>
       				</div>
     	 	 </div>
       </div>
        <div class="alert-tipo"></div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary salvar-tipo">Salvar</button>
+        <button type="button" class="btn btn-success salvar-tipo">Salvar</button>
       </div>
     </div>
   </div>
@@ -285,7 +287,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-success">Save changes</button>
       </div>
     </div>
   </div>
@@ -322,7 +324,7 @@
        <div class="alert-pagamento"></div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary salvar-pagamento">Salvar</button>
+        <button type="button" class="btn btn-success salvar-pagamento">Salvar</button>
       </div>
       </div>
     </div>
@@ -348,13 +350,16 @@
     <tbody>
       <tr>
         <td> <img class="rounded-circle" src="image/tipo/salgado.png"></td>
-        <td> <h6>Tamanho: <b>Fámilia</b>, Sabor: <b>Frango</b>, Borda: <b>Recheada</b>, Sabor: <b>Frango</b>, Borda: <b>Recheada</b></h6></td>
+        <td> <h6 class="descricao">Tamanho: <b>Fámilia</b>, Sabor: <b>Frango</b>, Borda: <b>Recheada</b>, Sabor: <b>Frango</b>, Borda: <b>Recheada</b>.</h6> <h5 class="valortotal"><strong>R$ 20,00</strong></h5></td>
+		
         <tr><td colspan="2" class="icon-full">
-
-          <i class="far fa-trash-alt fa-2x "></i>
-          <input class="form-control" type="number" value="1" id="example-number-input">
+		<small >Quantidade:</small>
+<input class="form-control text-center" type="number" value="1" id="example-number-input">
+          <button type="button" class="btn btn-danger remover"><i class="far fa-trash-alt"></i></button>
+          
+		  
 		   <br> <br>
-		 <h5> <strong>VALOR: </strong>R$20,00</h5>
+		 
       </td></tr></tr>
 
 
@@ -362,8 +367,8 @@
     </table>
 
   <br><br>
- <h6> Endereço: <b>Rua Vereador João Silva</b></h6>
- <h6>Nome: <b>Matheus</b></h6>
+ <h6 class="endereco"> Endereço: <b>Rua Vereador João Silva</b></h6>
+ <h6 class="nome">Nome: <b>Matheus Barreto Andrade</b></h6>
       				</div>
     	 	 </div>
 
@@ -371,8 +376,8 @@
       </div>
        <div class="alert-tipo"></div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary reiniciar-pizza" data-dismiss="modal">Continuar montando</button>
-        <button type="button" class="btn btn-primary salvar-pizza">Fazer pedido</button>
+        <button type="button" class="btn btn-secondary reiniciar-pizza" data-dismiss="modal">Continuar Montando</button>
+        <button type="button" class="btn btn-success salvar-pizza">Fazer pedido</button>
       </div>
     </div>
   </div>
