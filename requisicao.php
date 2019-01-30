@@ -1,5 +1,15 @@
+<?php
+require_once '_php/novo.php';
+
+
+?>
+
+
 <html>
-<?php require_once ('novo.php')?>
+
+
+
+
 <script
     type="text/javascript"
     src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
@@ -9,7 +19,7 @@
     src='https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js' ></script>
 
 
-<form method="post" action="novo.php" id="n">
+<form method="post" action="_php/novo.php" id="n">
 
     <span>
         <label>Média: </label>
@@ -23,10 +33,11 @@
 
 </form>
 
-<span id="result"> </span>
+ <span id='result'></span>
 
 
-<form method="post" action="novo.php" id="p">
+
+<form method="post" action="_php/novo.php" id="p">
 
     <span>
         <label>grande: </label>
@@ -38,6 +49,7 @@
     </span>
 
 
+
     <span>
 
         <input type="submit" value="Submit" />
@@ -46,19 +58,10 @@
 </form>
 <span id="novoresult"> </span>
 
-<script>
 
-$(function() {
-  setTime();
-  function setTime() {
 
-     setTimeout(setTime, 3000);
-     $('#total').html("<p><?php echo $vt; ?></p>");
-  }
-});
 
-  </script>
-<div id="total"></div>
+
 
 </html>
 
@@ -82,8 +85,8 @@ $(function() {
             data: form_data,
 
             success: function(returnhtml){
-                $("#result").html(returnhtml);
-
+            var retorno = returnhtml;
+            $("#result").html(retorno);
 
             }
         });
