@@ -13,6 +13,7 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/sidebar.js"></script>
+<script src="js/meuajax.js"></script>
     <script>
       feather.replace()
     </script>
@@ -39,7 +40,7 @@ small {
 </div>
 <div class="modal-body">
 
-  <form method="post" action="">
+  <form id="formulario">
 
     Tamanho:<br>
     <input type="text" name="tamanho" placeholder="Ex: Pequena">
@@ -53,8 +54,10 @@ small {
     Quant. Sabores:<br>
     <input type="text" name="qntsabor" placeholder="Ex: 2">
     <br><br>
-    <input type="submit" name="salvar">
+    <input type="button" id="salvar">
   </form>
+
+  <div id="resposta"></div>
 
 
 
