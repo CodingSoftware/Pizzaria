@@ -15,8 +15,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="navbar.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/style.css">
 
     <!-- Custom styles for this template -->
 
@@ -37,7 +37,7 @@
           <a class="nav-link" href="#">Cardápio</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Monte sua Pizza</a>
+          <a class="nav-link" href="monte-sua-pizza.php">Monte sua Pizza</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="contato.html">Contato</a>

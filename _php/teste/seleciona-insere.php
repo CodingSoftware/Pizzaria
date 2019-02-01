@@ -2,7 +2,7 @@
 
 require_once('_php/conector.php');
 
-$nome = $_POST['nome'];
+$nome = "Marcos";
 $sabor1 = $_POST['sabor1']
 $sabor2 = $_POST['sabor2']
 $verificanome = "SELECT * FROM usuarios WHERE nome = '$nome'";

@@ -11,7 +11,7 @@
 
   <body>
 <?php require_once('_php/variaveis.php'); ?>
-<?php require_once('_php/header.php'); ?>
+<?php require_once('header.php'); ?>
 
 </nav>
 	<header><h4 class="lead text-center"> Monte sua <strong>Pizza</strong>,qualquer duvida entre em contato conosco.</h4></header>
@@ -315,7 +315,7 @@ switch ($t) {
     case '1':
      $t=$f;
       echo"<div class='card-body text-center'>
-           <form method='post' action='index.php'>
+           <form method='post' action='monte-sua-pizza.php'>
            <img class='rounded-circle' src='image/tamanho/f.png'
            width='80px' height='80px'>
            <p class='card-text'>Família</p><p><strong>"."R$ ".number_format($f,2,",",".")."</strong></p>
@@ -329,7 +329,7 @@ switch ($t) {
     case '2':
     $t=$g;
      echo"<div class='card-body text-center'>
-          <form method='post' action='index.php'>
+          <form method='post' action='monte-sua-pizza.php'>
           <img class='rounded-circle' src='image/tamanho/g.png'
           width='80px' height='80px'>
           <p class='card-text'>Grande</p><p><strong>"."R$ ".number_format($g,2,",",".")."</strong></p>
@@ -343,7 +343,7 @@ switch ($t) {
     case '3':
     $t=$m;
      echo"<div class='card-body text-center'>
-          <form method='post' action='index.php'>
+          <form method='post' action='monte-sua-pizza.php'>
           <img class='rounded-circle' src='image/tamanho/g.png'
           width='80px' height='80px'>
           <p class='card-text'>Media</p><p><strong>"."R$ ".number_format($m,2,",",".")."</strong></p>
@@ -357,7 +357,7 @@ switch ($t) {
       case '4':
       $t=$p;
        echo"<div class='card-body text-center'>
-            <form method='post' action='index.php'>
+            <form method='post' action='monte-sua-pizza.php'>
             <img class='rounded-circle' src='image/tamanho/g.png'
             width='80px' height='80px'>
             <p class='card-text'>Pequena</p><p><strong>"."R$ ".number_format($p,2,",",".")."</strong></p>
@@ -397,7 +397,7 @@ switch ($b) {
     case '1':
      $b=$n;
       echo"<div class='card-body text-center'>
-           <form method='post' action='index.php'>
+           <form method='post' action='monte-sua-pizza.php'>
            <img class='rounded-circle' src='image/borda/normal.jpg'
            width='80px' height='80px'>
            <p class='card-text'>Normal</p><p><strong>"."R$ ".number_format($n,2,",",".")."</strong></p>
@@ -411,7 +411,7 @@ switch ($b) {
     case '2':
     $b=$r;
      echo"<div class='card-body text-center'>
-          <form method='post' action='index.php'>
+          <form method='post' action='monte-sua-pizza.php'>
           <img class='rounded-circle' src='image/borda/recheada.jpg'
           width='80px' height='80px'>
           <p class='card-text'>Recheada</p><p><strong>"."R$ ".number_format($r,2,",",".")."</strong></p>
@@ -503,4 +503,4 @@ switch ($b) {
 
 
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
