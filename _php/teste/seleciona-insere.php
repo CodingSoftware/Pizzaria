@@ -23,7 +23,7 @@ if($verificadosabor == 0){
   $update = "UPDATE preco SET sabor2='$sabor2' WHERE id=2";
   mysqli_query($conectar,$update) or die("Erro ao selecionar o sabor");
   mysqli_close($conectar);
-  echo "sabor selecionado!";
+  echo "sabor selecionado!!";
 
 }
 
