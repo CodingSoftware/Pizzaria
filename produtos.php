@@ -14,6 +14,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/sidebar.js"></script>
 <script src="js/meuajax.js"></script>
+<script src="js/teste.js"></script>
     <script>
       feather.replace()
     </script>
@@ -54,7 +55,7 @@ small {
     Quant. Sabores:<br>
     <input type="text" name="qntsabor" placeholder="Ex: 2">
     <br><br>
-    <input type="button" id="salvar">
+    <input type="button" class="btn btn-primary" value="Salvar" id="salvartam">
   </form>
 
   <div id="resposta"></div>
@@ -182,8 +183,8 @@ small {
       <div class="form-row">
       <div class="form-group col-md-4">
       <label for="inputState">Tamanho da Pizza</label>
-      <select id="inputState" class="form-control">
-        <option></option>
+      <select id="selecttam" class="form-control">
+
 
       </select>
       <br>
