@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 
+
 $("#salvartam").click(function(){
 
   var form = new FormData($("#formulario")[0]);

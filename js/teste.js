@@ -11,4 +11,15 @@ $(document).ready(function(){
   $("#selecttam").load("_php/mostprod.php");
 });
 
+
+setTimeout(function () {
+
+  setTimeout(function () {
+$("#trtam").load("_php/mostprod.php#tdtam");
+}, 1);
+
+
+
+
+});
 });

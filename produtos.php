@@ -30,7 +30,7 @@ small {
 
 </style>
 
-<div class="modal fade " id="ModalTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="ModalInsertTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
 <div class="modal-content">
 <div class="modal-header">
@@ -45,6 +45,9 @@ small {
 
     Tamanho:<br>
     <input type="text" name="tamanho" placeholder="Ex: Pequena">
+    <div class="invalid-feedback">
+              Credit card number is required
+            </div>
     <br>
     Quant. Fatias:<br>
     <input type="text" name="qntfatia" placeholder="Ex: 5">
@@ -55,7 +58,7 @@ small {
     Quant. Sabores:<br>
     <input type="text" name="qntsabor" placeholder="Ex: 2">
     <br><br>
-    <input type="button" class="btn btn-primary" value="Salvar" id="salvartam">
+    <input type="button" class="btn btn-primary" value="Salvar" id="salvartam" data-dismiss="modal">
   </form>
 
   <div id="resposta"></div>
@@ -69,8 +72,28 @@ small {
 </div>
 </div>
 
+<div class="modal fade " id="ModalDeleteTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Delete os Tamanhos</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<table>
+<tr>
+<th></th>
+</tr>
+<tr id="trtam"></tr>
+</table>
+ </div>
 
-<
+
+</div>
+</div>
+</div>
 
    <header>
 
@@ -189,8 +212,8 @@ small {
       </select>
       <br>
       	<ul class="list-inline text-center">
-      <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalTamanho'><i class="fas fa-plus"></i></button>
-      <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button>
+      <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertTamanho'><i class="fas fa-plus"></i></button>
+      <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteTamanho'><i class="fas fa-minus"></i></button>
       	</ul>
     </div>
     <div class="form-group col-md-4">
