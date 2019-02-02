@@ -1,25 +1,23 @@
 $(document).ready(function(){
-    setTimeout(function () {
 
 
-    $("#selecttam").load("_php/mostprod.php");
-  }, 1);
 
   $("#salvartam").click(function(){
 
 
-  $("#selecttam").load("_php/mostprod.php");
+  $("#selecttam").load("_php/mostprod.php option");
 });
 
 
-setTimeout(function () {
+
+
+
+
 
   setTimeout(function () {
-$("#trtam").load("_php/mostprod.php#tdtam");
+  $("#selecttam").load("_php/mostprod.php option");
 }, 1);
 
 
 
-
-});
 });

@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) {
 if (mysqli_num_rows($result1) > 0) {
     // output data of each row
     while($row1 = mysqli_fetch_assoc($result1)) {
-        echo "<td id='tdtam'>" . $row1["tamanho"]."</td>"."<br>";
+        echo "<div id='divt'>".$row1["tamanho"]."</div>"."<br>";
     }
 
 } else {
