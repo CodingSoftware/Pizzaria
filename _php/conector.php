@@ -1,4 +1,6 @@
 <?php
+
+
 $servidor = "localhost";
 $usuario = "filial185";
 $senha = "senhafilial";

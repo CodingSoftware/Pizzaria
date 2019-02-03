@@ -1,5 +1,6 @@
 <?php
 require_once 'conector.php';
+
 $tamanho =  $_POST['tamanho'];
 $qntsabor = $_POST['qntsabor'];
 $qntfatia = $_POST['qntfatia'];

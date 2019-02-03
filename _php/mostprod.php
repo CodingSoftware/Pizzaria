@@ -3,10 +3,10 @@ require_once 'conector.php';
 
 
 
-
 $select = "SELECT tamanho FROM tamanho";
 $result = mysqli_query($conectar, $select);
 $result1 = mysqli_query($conectar, $select);
+
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row

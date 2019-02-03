@@ -83,7 +83,7 @@ small {
 </div>
 <div class="modal-body">
 
-<div id="divtam">
+
 </div>
 
  </div>
@@ -205,9 +205,8 @@ small {
       <div class="form-group col-md-4">
       <label for="inputState">Tamanho da Pizza</label>
       <select id="selecttam" class="form-control">
-
-
       </select>
+      <div id="divtam"></div>
       <br>
       	<ul class="list-inline text-center">
       <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertTamanho'><i class="fas fa-plus"></i></button>

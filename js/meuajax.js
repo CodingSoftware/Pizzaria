@@ -23,5 +23,4 @@ $("#salvartam").click(function(){
     })
 })
 
-}
-)
+})
