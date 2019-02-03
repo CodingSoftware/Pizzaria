@@ -1,11 +1,14 @@
 <?php
 require_once 'conector.php';
 
+$acao=$_GET['acao'];
 
 
 $select = "SELECT tamanho FROM tamanho";
 $result = mysqli_query($conectar, $select);
 $result1 = mysqli_query($conectar, $select);
+
+if($acao=="mostrar"){
 
 
 if (mysqli_num_rows($result) > 0) {
@@ -17,9 +20,9 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo ". results";
 }
+}
 
-
-
+if($acao=="deletar"){
 
 if (mysqli_num_rows($result1) > 0) {
     // output data of each row
@@ -32,7 +35,7 @@ if (mysqli_num_rows($result1) > 0) {
 }
 
 
-
+}
 
 
 
