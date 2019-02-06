@@ -42,21 +42,21 @@ small {
   <form id="formulario">
 
     Tamanho:<br>
-    <input type="text" class="form-control"  id="1" name="tamanho" placeholder="Ex: Pequena">
+    <input type="text" class="form-control"  id="1" name="tamanho" placeholder="Ex: Pequena" required>
     <br>
     Quant. Fatias:<br>
-    <input type="text" class="form-control"  id="2"  name="qntfatia" placeholder="Ex: 5">
+    <input type="text" class="form-control"  id="2"  name="qntfatia" placeholder="Ex: 5" required>
     <br>
     Valor:<br>
-    <input type="text" class="form-control"  id="3"  name="valort" placeholder="Ex: 14.9">
+    <input type="text" class="form-control"  id="3"  name="valort" placeholder="Ex: 14.9" required>
     <br>
     Quant. Sabores:<br>
-    <input type="text" class="form-control"  id="4"  name="qntsabor" placeholder="Ex: 2">
+    <input type="text" class="form-control"  id="4"  name="qntsabor" placeholder="Ex: 2" required>
     <br><br>
     <input type="button" class="btn btn-primary" value="Salvar" id="salvartam" data-dismiss="modal">
   </form>
 
-  
+
 
 
 
