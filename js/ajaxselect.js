@@ -86,9 +86,3 @@ $(document).ready(function(){
   }, 1);
 
 });
-
-
-
-$(document).ready(function(){
-
-  });
