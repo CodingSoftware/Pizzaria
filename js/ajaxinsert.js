@@ -17,11 +17,17 @@ $("#salvartam").click(function(){
       data:form,
       timeout:8000,
       success:function (resultado) {
-          $("#resposta").html(resultado);
+        
 
       }
 
     })
+
+$("#1").val("");
+$("#2").val("");
+$("#3").val("");
+$("#4").val("");
+
 })
 
 })

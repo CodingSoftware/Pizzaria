@@ -17,31 +17,53 @@ $(".lixo").click(function(){
 
         $("#recebe").html(resultado);
 
+
+          setTimeout(function () {
+            $.ajax({
+              url:'_php/mostprod.php',
+              type:'get',
+              cache:false,
+              processData:true,
+              contentType:false,
+              data:{ acao: "deletar"},
+              timeout:1000,
+              success:function (resultado) {
+                  $("#divtam").html(resultado);
+
+              }
+
+            })
+          //intervalo de tempo
+        }, 1);
+
+
+
+        setTimeout(function () {
+            //Faz requisição ajax afim de condicionar o conteudo exibido
+          $.ajax({
+            url:'_php/mostprod.php',
+            type:'get',
+            cache:false,
+            processData:true,
+            contentType:false,
+            data:{ acao: "mostrar"},
+            timeout:1000,
+            success:function (resultado) {
+              //exibe o conteudo no select
+                $("#selecttam").html(resultado);
+
+            }
+
+          })
+        //intervalo de tempo
+      }, 1);
+
+
+
+
     }
 
   })
-
-
-  setTimeout(function () {
-    $.ajax({
-      url:'_php/mostprod.php',
-      type:'get',
-      cache:false,
-      processData:true,
-      contentType:false,
-      data:{ acao: "deletar"},
-      timeout:1000,
-      success:function (resultado) {
-          $("#divtam").html(resultado);
-
-      }
-
-    })
-  //intervalo de tempo
-}, 5000);
-
-
-
 
 
 

@@ -39,17 +39,20 @@ echo "<table class='table table-striped'>
 if (mysqli_num_rows($result1) > 0) {
     // output data of each row
     while($row1 = mysqli_fetch_assoc($result1)) {
+        $valor='R$  ' . number_format($row1["valor"], 2, ',', '.');
+
+
         echo "<tr><td>"
         .$row1["tamanho"]."</td> <td>"
         .$row1["qtd_fatias"]."</td> <td>"
         .$row1["qtd_sabores"]."</td> <td>"
-        .$row1["valor"]."</td> <td>
+        .$valor."</td> <td>
         <button id=".$row1["id"]." class='lixo btn btn-sm btn-danger'>
         <i class='far fa-trash-alt'></i></button></td>";
     }
 
 } else {
-    echo ". results";
+
 }
 echo "</table>";
 echo "<div id='recebe'></div>";

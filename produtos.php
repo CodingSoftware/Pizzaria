@@ -42,24 +42,21 @@ small {
   <form id="formulario">
 
     Tamanho:<br>
-    <input type="text" name="tamanho" placeholder="Ex: Pequena">
-    <div class="invalid-feedback">
-              Credit card number is required
-            </div>
+    <input type="text" class="form-control"  id="1" name="tamanho" placeholder="Ex: Pequena">
     <br>
     Quant. Fatias:<br>
-    <input type="text" name="qntfatia" placeholder="Ex: 5">
+    <input type="text" class="form-control"  id="2"  name="qntfatia" placeholder="Ex: 5">
     <br>
     Valor:<br>
-    <input type="text" name="valort" placeholder="Ex: 14.9">
+    <input type="text" class="form-control"  id="3"  name="valort" placeholder="Ex: 14.9">
     <br>
     Quant. Sabores:<br>
-    <input type="text" name="qntsabor" placeholder="Ex: 2">
+    <input type="text" class="form-control"  id="4"  name="qntsabor" placeholder="Ex: 2">
     <br><br>
     <input type="button" class="btn btn-primary" value="Salvar" id="salvartam" data-dismiss="modal">
   </form>
 
-  <div id="resposta"></div>
+  
 
 
 
