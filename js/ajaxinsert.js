@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
 
 
@@ -20,7 +19,8 @@ $("#salvartam").click(function(){
         
 
       }
-
+	  
+	  
     })
 
 $("#1").val("");
@@ -29,5 +29,8 @@ $("#3").val("");
 $("#4").val("");
 
 })
+
+
+
 
 })

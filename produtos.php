@@ -4,6 +4,7 @@
 <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="css/smartphone.css" media="screen and (max-width: 600px)">
 <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 600px)">
@@ -41,20 +42,28 @@ small {
 
   <form id="formulario">
 
-    Tamanho:<br>
+<div class="col-md-12 mb-3">
+    <label for="validationDefault01">Tamanho:</label>
     <input type="text" class="form-control"  id="1" name="tamanho" placeholder="Ex: Pequena" required>
-    <br>
-    Quant. Fatias:<br>
+    </div>
+	<div class="col-md-12 mb-3">
+    <label for="validationDefault02">Qnt. Fatias:</label>
     <input type="text" class="form-control"  id="2"  name="qntfatia" placeholder="Ex: 5" required>
-    <br>
-    Valor:<br>
+    </div>
+	
+
+    <div class="col-md-12 mb-3">
+    <label for="validationDefault03">Valor:</label>
     <input type="text" class="form-control"  id="3"  name="valort" placeholder="Ex: 14.9" required>
-    <br>
-    Quant. Sabores:<br>
+   </div>
+    <div class="col-md-12 mb-3">
+   <label for="validationDefault04">Qnt. Sabores:</label>
     <input type="text" class="form-control"  id="4"  name="qntsabor" placeholder="Ex: 2" required>
-    <br><br>
-    <input type="button" class="btn btn-primary" value="Salvar" id="salvartam" data-dismiss="modal">
-  </form>
+   </div>
+ 
+    <input type="button" class="btn btn-success" value="Salvar" id="salvartam" data-dismiss="modal">
+ </div>
+ </form>
 
 
 
