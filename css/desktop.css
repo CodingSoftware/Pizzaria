@@ -1,9 +1,26 @@
 
 
-	
-	
 
-	
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+}
+
+input[type="number"] {
+		-moz-appearance: textfield;
+}
+
+small {
+
+  font-weight:bold;
+  position:relative;
+  top: 170px;
+}
+i.fa-caret-right{
+	display: none;
+}
+
+
 body {
   font-size: .875rem;
   background: #efefef;
@@ -83,11 +100,11 @@ position: fixed;
   font-size: 1.0rem;
   text-transform: uppercase;
   font-weight:bold;
-  letter-spacing: 2px;	
-  
- 
+  letter-spacing: 2px;
 
- 
+
+
+
 
 }
 .navbar .navbar-nav .nav-link{

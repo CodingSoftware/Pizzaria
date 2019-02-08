@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="utf-8">
@@ -6,8 +7,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link rel="stylesheet" href="css/smartphone.css" media="screen and (max-width: 600px)">
-<link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 600px)">
+<link rel="stylesheet" href="css/smartphone.css" media="screen and (max-width: 768px)">
+<link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 768px)">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -19,98 +20,9 @@
 
 
 </head>
-<style>
-small {
-
-  font-weight:bold;
-  position:relative;
-  top: 170px;
-}
-
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
- 
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-</style>
-
-<div class="modal fade " id="ModalInsertTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">Defina os Tamanhos</h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-</div>
-<div class="modal-body">
-
-  <form id="formulario">
-
-<div class="col-md-12 mb-3">
-    <div class="alert-tam"></div>
-	
-    <label for="validationDefault01">Tamanho:</label>
-    <input type="text" class="form-control"  id="1" name="tamanho" placeholder="Ex: Pequena" required>
-    </div>
-	<div class="col-md-12 mb-3">
-    <label for="validationDefault02">Qnt. Fatias:</label>
-    <input type="number" class="form-control"  id="2"  name="qntfatia" placeholder="Ex: 5" required>
-    </div>
-
-
-    <div class="col-md-12 mb-3">
-    <label for="validationDefault03">Valor:</label>
-    <input type="number" class="form-control"  id="3"  name="valort" placeholder="Ex: 14.9" required>
-   </div>
-    <div class="col-md-12 mb-3">
-   <label for="validationDefault04">Qnt. Sabores:</label>
-    <input type="number" class="form-control"  id="4"  name="qntsabor" placeholder="Ex: 2" required>
-   </div>
-
-    <input type="button" class="btn btn-success" value="Salvar" id="salvartam">
-	
- </div>
- </form>
-
-
-
-
-
-</div>
-
-
-</div>
-</div>
-</div>
-
-<div class="modal fade " id="ModalDeleteTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">Delete os Tamanhos</h5>
-
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-</div>
-<div class="modal-body">
-  <div id="divtam"></div>
-
-
-</div>
-
- </div>
-
-
-</div>
-</div>
-</div>
-
+<?php
+require_once('modal.php');
+?>
    <header>
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-danger">
@@ -234,14 +146,12 @@ input[type="number"] {
     </div>
     <div class="form-group col-md-4">
     <label for="inputState">Tipos de Bordas</label>
-    <select id="inputState" class="form-control">
-      <option></option>
-
+    <select id="selectbord" class="form-control">
     </select>
     <br>
       <ul class="list-inline text-center">
-    <button type="button" class="btn btn-sm btn-success"><i class="fas fa-plus"></i></button>
-    <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button>
+    <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertBorda'><i class="fas fa-plus"></i></button>
+    <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteBorda'><i class="fas fa-minus"></i></button>
       </ul>
     </div>
 

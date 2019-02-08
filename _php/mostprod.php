@@ -10,11 +10,12 @@ require_once 'conector.php';
 $acao=$_GET['acao'];
 
 
-$select = "SELECT id, tamanho, qtd_fatias ,qtd_sabores , valor FROM tamanho";
-$result = mysqli_query($conectar, $select);
-$result1 = mysqli_query($conectar, $select);
 
-if($acao=="mostrar"){
+if($acao=="mostrartam"){
+  
+  $select = "SELECT id, tamanho, qtd_fatias ,qtd_sabores , valor FROM tamanho";
+  $result = mysqli_query($conectar, $select);
+  $result1 = mysqli_query($conectar, $select);
 
 
 if (mysqli_num_rows($result) > 0) {
@@ -29,7 +30,11 @@ if (mysqli_num_rows($result) > 0) {
 }
 }
 
-if($acao=="deletar"){
+
+
+
+
+if($acao=="deletartam"){
 echo "<table class='table table-striped'>
       <tr><th>Tamanho</th>
       <th>Qnt. Fatias</th>

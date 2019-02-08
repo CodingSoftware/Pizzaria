@@ -8,7 +8,7 @@ $(document).ready(function(){
       cache:false,
       processData:true,
       contentType:false,
-      data:{ acao: "mostrar"},
+      data:{ acao: "mostrartam"},
       timeout:8000,
       success:function (resultado) {
         //exibe o conteudo no select
@@ -30,7 +30,7 @@ $(document).ready(function(){
       cache:false,
       processData:true,
       contentType:false,
-      data:{ acao: "mostrar"},
+      data:{ acao: "mostrartam"},
       timeout:8000,
       success:function (resultado) {
         //exibe o conteudo no select
@@ -54,7 +54,7 @@ $(document).ready(function(){
       cache:false,
       processData:true,
       contentType:false,
-      data:{ acao: "deletar"},
+      data:{ acao: "deletartam"},
       timeout:8000,
       success:function (resultado) {
           //exibe o conteudo no div
@@ -74,7 +74,7 @@ $(document).ready(function(){
       cache:false,
       processData:true,
       contentType:false,
-      data:{ acao: "deletar"},
+      data:{ acao: "deletartam"},
       timeout:8000,
       success:function (resultado) {
           $("#divtam").html(resultado);
