@@ -27,6 +27,15 @@ small {
   top: 170px;
 }
 
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 </style>
 
 <div class="modal fade " id="ModalInsertTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -43,25 +52,28 @@ small {
   <form id="formulario">
 
 <div class="col-md-12 mb-3">
+    <div class="alert-tam"></div>
+	
     <label for="validationDefault01">Tamanho:</label>
     <input type="text" class="form-control"  id="1" name="tamanho" placeholder="Ex: Pequena" required>
     </div>
 	<div class="col-md-12 mb-3">
     <label for="validationDefault02">Qnt. Fatias:</label>
-    <input type="text" class="form-control"  id="2"  name="qntfatia" placeholder="Ex: 5" required>
+    <input type="number" class="form-control"  id="2"  name="qntfatia" placeholder="Ex: 5" required>
     </div>
-	
+
 
     <div class="col-md-12 mb-3">
     <label for="validationDefault03">Valor:</label>
-    <input type="text" class="form-control"  id="3"  name="valort" placeholder="Ex: 14.9" required>
+    <input type="number" class="form-control"  id="3"  name="valort" placeholder="Ex: 14.9" required>
    </div>
     <div class="col-md-12 mb-3">
    <label for="validationDefault04">Qnt. Sabores:</label>
-    <input type="text" class="form-control"  id="4"  name="qntsabor" placeholder="Ex: 2" required>
+    <input type="number" class="form-control"  id="4"  name="qntsabor" placeholder="Ex: 2" required>
    </div>
- 
-    <input type="button" class="btn btn-success" value="Salvar" id="salvartam" data-dismiss="modal">
+
+    <input type="button" class="btn btn-success" value="Salvar" id="salvartam">
+	
  </div>
  </form>
 
