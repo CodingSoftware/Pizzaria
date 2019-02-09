@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta charset="utf-8">
@@ -16,7 +15,8 @@
 <script src="js/sidebar.js"></script>
 <script src="js/ajaxinsert.js"></script>
 <script src="js/ajaxselect.js"></script>
-<script src="js/ajaxdelete.js"></script>
+
+
 
 
 </head>
@@ -157,41 +157,35 @@ require_once('modal.php');
 
     <div class="form-group col-md-4">
     <label for="inputState">Sabores da Pizza</label>
-    <select id="inputState" class="form-control">
-      <option></option>
-
+    <select id="selectsabor" class="form-control">
     </select>
     <br>
       <ul class="list-inline text-center">
-    <button type="button" class="btn btn-sm btn-success"><i class="fas fa-plus"></i></button>
-    <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button>
+    <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertSabor'><i class="fas fa-plus"></i></button>
+    <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteSabor'><i class="fas fa-minus"></i></button>
       </ul>
     </div>
     </div>
     <div class="form-row">
     <div class="form-group col-md-4">
     <label for="inputState">Refrigerante</label>
-    <select id="inputState" class="form-control">
-      <option></option>
-
+    <select id="selectbebida" class="form-control">
     </select>
     <br>
       <ul class="list-inline text-center">
-    <button type="button" class="btn btn-sm btn-success"><i class="fas fa-plus"></i></button>
-    <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button>
+    <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertBebida'><i class="fas fa-plus"></i></button>
+    <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteBebida'><i class="fas fa-minus"></i></button>
       </ul>
         </div>
 
     <div class="form-group col-md-4">
     <label for="inputState">MotoBoy</label>
-    <select id="inputState" class="form-control">
-      <option></option>
-
+    <select id="selectentrega" class="form-control">
     </select>
     <br>
       <ul class="list-inline text-center">
-    <button type="button" class="btn btn-sm btn-success"><i class="fas fa-plus"></i></button>
-    <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button>
+    <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertEntrega'><i class="fas fa-plus"></i></button>
+    <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteEntrega'><i class="fas fa-minus"></i></button>
       </ul>
     </div>
   </div>
