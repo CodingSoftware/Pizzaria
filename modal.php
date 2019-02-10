@@ -308,7 +308,7 @@
    <div class="col-md-12 mb-3">
    <label for="validationDefault03">Tipo Entrega:</label><br>
    <input style="display:none" type="text" class="form-control" name="modal" value="entrega">
-   <input type="radio" class="gratis" name="entrega" value="Gratuita" checked>  Gratuita<br>
+   <input type="radio" class="gratis" name="entrega" value="Gratuita" >  Gratuita<br>
    <input type="radio" class="pago" name="entrega" value="Paga">  Paga<br>
   </div>
 

@@ -161,11 +161,12 @@ $(document).ready(function(){
 
 $(".pago").click(function(){
 $(".valor").removeClass("esconde");
-
+$("input#entrega1").removeAttr("Value","0");
 });
 
 $(".gratis").click(function(){
 $("div.valor").addClass("esconde");
+$("input#entrega1").attr("Value","0");
 });
 
 });
