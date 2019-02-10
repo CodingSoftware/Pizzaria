@@ -1,10 +1,10 @@
 <?php
 
 
-$servidor = "localhost";
-$usuario = "root";
-$senha = "root";
-$banco = "test";
+$servidor = "etdq12exrvdjisg6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$usuario = "j8uju4txtsb8tli2";
+$senha = "z5v0aaon2iijb3lr";
+$banco = "b98p7h43wvkg7xwp";
 $conectar = mysqli_connect("$servidor","$usuario","$senha","$banco");
 
 if (!$conectar) {
