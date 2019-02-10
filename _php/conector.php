@@ -14,7 +14,8 @@ if (!$conectar) {
     exit;
 }
 else{
-  echo "ok";
+
+  
 }
 
 
