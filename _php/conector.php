@@ -2,8 +2,8 @@
 
 
 $servidor = "localhost";
-$usuario = "filial185";
-$senha = "senhafilial";
+$usuario = "root";
+$senha = "root";
 $banco = "test";
 $conectar = mysqli_connect("$servidor","$usuario","$senha","$banco");
 
@@ -13,7 +13,9 @@ if (!$conectar) {
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
-
+else{
+  echo "ok";
+}
 
 
 
