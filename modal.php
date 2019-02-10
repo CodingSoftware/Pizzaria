@@ -1,5 +1,5 @@
 
-                                    //Inicio seção tamanho
+                                  <!--Inicio seção tamanho-->
 <div class="modal fade " id="ModalInsertTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
 <div class="modal-content">
@@ -73,8 +73,8 @@
 </div>
 </div>
 </div>
-                                    //Fim seção tamanho
-                                    //Inicio seção Borda
+                                  <!-- //Fim seção tamanho
+                                    //Inicio seção Borda-->
 <div class="modal fade " id="ModalInsertBorda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
 <div class="modal-content">
@@ -140,8 +140,8 @@
 </div>
 </div>
 </div>
-                                    //Fim seção Borda
-                                    //Inicio seção Sabor
+                                  <!-- //Fim seção Borda
+                                    //Inicio seção Sabor-->
 
 <div class="modal fade " id="ModalInsertSabor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
@@ -208,9 +208,9 @@
 </div>
 </div>
 </div>
-                                    //Fim seção Sabor
+                                    <!--//Fim seção Sabor
 
-                                    //Inicio seção Bebida
+                                    //Inicio seção Bebida-->
 
 <div class="modal fade " id="ModalInsertBebida" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
@@ -284,8 +284,8 @@
 </div>
 </div>
 </div>
-                                    //Fim seção Bebida
-                                    //Inicio seção Entrega
+                                    <!--//Fim seção Bebida
+                                    //Inicio seção Entrega -->
 
 <div class="modal fade " id="ModalInsertEntrega" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
@@ -355,4 +355,4 @@
 </div>
 </div>
 </div>
-                                    //Fim seção Entrega
+                                    <!--//Fim seção Entrega -->
