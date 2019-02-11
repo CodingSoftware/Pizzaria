@@ -171,7 +171,7 @@ include 'header.php';
 			<br>
 			<div class="foot">
 
-    <p>&copy;2019 <a href="#">CodingSoftware.com</a></p>
+    <p>&copy;2019 <a href="#">codingsoftware.com</a></p>
 </div>
   </footer>
 </main>
