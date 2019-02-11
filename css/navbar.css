@@ -1,6 +1,12 @@
+.carousel{
+  top: 63px;
+position: relative;
+}
+.space-card{
+  top: 20px;
+}
 
-
-.navbar{
+  .navbar{
   opacity:0.95;
   }
 
@@ -21,7 +27,18 @@
 	color:#fff;
 
 	}
+	.login{
 
+	font-size:11pt;
+	}
+	.cad{
+
+	font-size:11pt;
+	}
+ body{
+background: white;s
+
+ }
 	.dropdown-menu{
 	left:1110px;
 
@@ -52,10 +69,81 @@ background:rgba(185,37,52,0.6);
 border-radius:5px;
 
 	 }
-	 
-	 
-	 
-	 .navbar .dropdown-menu {
+	 .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+	.container-footer{
+	height:9,5%;
+	width:100%;
+	position:absolute;
+	background:#DA3646;
+	}
+	  .container-footer p{
+	  color:white;
+	  }
+
+	  .container-footer a{
+	  color:white;
+
+
+	  }
+	  .container-footer .social:hover{
+	 opacity:0.5;
+
+
+	  }
+	  .float-right {
+	  right:10px;
+	  position:relative;
+	  }
+	  .container-footer h5{
+
+	  text-align:center;
+	  color: white;
+	  font-weight:none;
+	  font-size:10pt;
+	  }
+
+	  .list-inline-item:hover {
+	  background:rgba(185,37,52,0.6);
+
+border-radius:20px;
+	  }
+
+	  .foot{
+
+	  background:rgba(185,37,52,1.0);
+	  width:100%;
+	  position:absolute;
+
+	  }
+
+	  .foot p{
+
+	  text-align:center;
+
+	  margin-bottom: 0px;
+	  font-size:13px;
+
+	  }
+
+	  .card:hover{
+	 box-shadow: 0px 0px 1px grey;
+	  }
+
+	  .col-lg-4 .txtchato {
+	  font-size: 21pt;
+	  }
+
+	  .navbar .dropdown-menu {
 		border-radius: 1px;
 		border-color: #e5e5e5;
 		box-shadow: 0 2px 8px rgba(0,0,0,.05);
