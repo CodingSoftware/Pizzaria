@@ -1,3 +1,20 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+
+.img-fluid{
+width: 40px%;
+height:40px;
+}
+
 .carousel{
   top: 63px;
 position: relative;
@@ -135,9 +152,7 @@ border-radius:20px;
 
 	  }
 
-	  .card:hover{
-	 box-shadow: 0px 0px 1px grey;
-	  }
+
 
 	  .col-lg-4 .txtchato {
 	  font-size: 21pt;

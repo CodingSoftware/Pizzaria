@@ -4,16 +4,25 @@
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Monte sua Pizza</title>
-<link rel="stylesheet" href="css/style.css">
 
+
+
+<style>
+
+header {
+	margin-bottom:70px;
+}
+
+</style>
 
   </head>
 
   <body>
-<?php require_once('_php/variaveis.php'); ?>
-<?php require_once('header.php'); ?>
 
+<?php require_once('header.php'); ?>
+<link rel="stylesheet" href="css/style.css">
 </nav>
+
 	<header><h4 class="lead text-center"> Monte sua <strong>Pizza</strong>,qualquer duvida entre em contato conosco.</h4></header>
   <!-- Seção Modal -->
 <!-- Tamanho -->

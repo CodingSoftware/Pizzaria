@@ -15,8 +15,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/navbar.css">
 
+<link rel="stylesheet" href="css/navbar.css">
 <link href="css/carousel.css" rel="stylesheet">
 
 
@@ -34,7 +34,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
         </li>
     <li class="nav-item">
           <a class="nav-link" href="#">Cardápio</a>
@@ -43,10 +43,10 @@
           <a class="nav-link" href="monte-sua-pizza.php">Monte sua Pizza</a>
         </li>
     <li class="nav-item">
-          <a class="nav-link" href="contato.html">Contato</a>
+          <a class="nav-link" href="contato.php">Contato</a>
         </li>
            <li class="nav-item">
-          <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+          <a class="nav-link" href="cadastro.php">Cadastre-se</a>
         </li>
       <li class="nav-item">
         <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
@@ -55,7 +55,7 @@
             <form action="/examples/actions/confirmation.php" method="post">
               <p class="hint-text">Faça o seu login usando as Redes Sociais</p>
               <div class="form-group social-btn clearfix">
-                <a href="#" class="btn btn-primary pull-left"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="dashboard.php" class="btn btn-primary pull-left"><i class="fab fa-facebook"></i> Facebook</a>
                 <a href="#" class="btn btn-info pull-right"><i class="fab fa-twitter"></i> Twitter</a>
               </div>
               <div class="or-seperator"><b>ou</b></div>
