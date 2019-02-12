@@ -6,6 +6,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="js/sidebar.js"></script>
+<?php
+require_once('modal.php');
+require_once('sidebar.php');
+?>
 <script src="js/ajaxinsert.js"></script>
 <script src="js/ajaxselect.js"></script>
 
@@ -13,11 +17,7 @@
 
 
 </head>
-<?php
-require_once('modal.php');
-require_once('sidebar.php');
-?>
-		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
       <br>
 <h2> Cadastro de Produtos </h2>
     <form>
