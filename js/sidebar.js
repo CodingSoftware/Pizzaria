@@ -1,8 +1,4 @@
-
 $(document).ready(function(){
-
-
-
 
 $("a.side").click(function(){
 
