@@ -9,15 +9,14 @@
 require_once('modal.php');
 require_once('sidebar.php');
 ?>
-<script src="js/sidebar.js"></script>
-<script src="js/ajaxinsert.js"></script>
-<script src="js/ajaxselect.js"></script>
+
 
 
 
 
 </head>
-main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<div id="script"></div>
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
       <br>
 <h2> Cadastro de Produtos </h2>
     <form>

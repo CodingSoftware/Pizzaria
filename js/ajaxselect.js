@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   //Tamanho
     $.ajax({
       url:'_php/mostprod.php',
@@ -24,6 +25,7 @@ $(document).ready(function(){
       data:{ acao: "deletartam"},
       timeout:8000,
       success:function (resultado) {
+
           $("#divtam").html(resultado);
 
       }
