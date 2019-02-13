@@ -16,6 +16,11 @@ $(document).ready(function(){
       }
 
     });
+
+
+
+
+    $("#deletetamanho").click(function(){
     $.ajax({
       url:'_php/mostprod.php',
       type:'get',
@@ -29,8 +34,14 @@ $(document).ready(function(){
           $("#divtam").html(resultado);
 
       }
+      });
+          });
+
+
+
+
       //Borda
-    });
+
     $.ajax({
       url:'_php/mostprod.php',
       type:'get',
@@ -46,6 +57,8 @@ $(document).ready(function(){
       }
 
     });
+
+      $("#deleteborda").click(function(){
     $.ajax({
       url:'_php/mostprod.php',
       type:'get',
@@ -60,6 +73,7 @@ $(document).ready(function(){
       }
 
     });
+  })
     //Sabor
   $.ajax({
     url:'_php/mostprod.php',
@@ -76,6 +90,8 @@ $(document).ready(function(){
     }
 
   });
+
+      $("#deletesabor").click(function(){
   $.ajax({
     url:'_php/mostprod.php',
     type:'get',
@@ -90,7 +106,7 @@ $(document).ready(function(){
     }
 
   });
-
+});
 
   //Bebida
 $.ajax({
@@ -108,6 +124,7 @@ $.ajax({
   }
 
 });
+  $("#deletebebida").click(function(){
 $.ajax({
   url:'_php/mostprod.php',
   type:'get',
@@ -122,7 +139,7 @@ $.ajax({
   }
 
 });
-
+});
 
   //Entrega
 $.ajax({
@@ -140,6 +157,8 @@ $.ajax({
   }
 
 });
+
+    $("#deleteentrega").click(function(){
 $.ajax({
   url:'_php/mostprod.php',
   type:'get',
@@ -157,7 +176,7 @@ $.ajax({
 
 });
 
-
+});
 
 $(document).ready(function(){
 

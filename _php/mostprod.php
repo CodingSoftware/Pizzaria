@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<script src='js/ajaxdelete.js'></script>
+<div id="script"><script src='js/ajaxdelete.js'></script></div>
 </head>
 
 <?php

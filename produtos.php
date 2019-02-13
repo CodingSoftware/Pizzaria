@@ -32,7 +32,7 @@ require_once('sidebar.php');
       <br>
       	<ul class="list-inline text-center">
       <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertTamanho'><i class="fas fa-plus"></i></button>
-      <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteTamanho'><i class="fas fa-minus"></i></button>
+      <button type="button" id="deletetamanho" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteTamanho'><i class="fas fa-minus"></i></button>
       	</ul>
     </div>
     <div class="form-group col-md-4">
@@ -42,7 +42,7 @@ require_once('sidebar.php');
     <br>
       <ul class="list-inline text-center">
     <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertBorda'><i class="fas fa-plus"></i></button>
-    <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteBorda'><i class="fas fa-minus"></i></button>
+    <button type="button" id="deleteborda" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteBorda'><i class="fas fa-minus"></i></button>
       </ul>
     </div>
 
@@ -53,7 +53,7 @@ require_once('sidebar.php');
     <br>
       <ul class="list-inline text-center">
     <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertSabor'><i class="fas fa-plus"></i></button>
-    <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteSabor'><i class="fas fa-minus"></i></button>
+    <button type="button" id="deletesabor" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteSabor'><i class="fas fa-minus"></i></button>
       </ul>
     </div>
     </div>
@@ -65,7 +65,7 @@ require_once('sidebar.php');
     <br>
       <ul class="list-inline text-center">
     <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertBebida'><i class="fas fa-plus"></i></button>
-    <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteBebida'><i class="fas fa-minus"></i></button>
+    <button type="button" id="deletebebida" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteBebida'><i class="fas fa-minus"></i></button>
       </ul>
         </div>
 
@@ -76,7 +76,7 @@ require_once('sidebar.php');
     <br>
       <ul class="list-inline text-center">
     <button type="button" class="btn btn-sm btn-success" data-toggle='modal' data-target='#ModalInsertEntrega'><i class="fas fa-plus"></i></button>
-    <button type="button" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteEntrega'><i class="fas fa-minus"></i></button>
+    <button type="button" id="deleteentrega" class="btn btn-sm btn-danger" data-toggle='modal' data-target='#ModalDeleteEntrega'><i class="fas fa-minus"></i></button>
       </ul>
     </div>
   </div>

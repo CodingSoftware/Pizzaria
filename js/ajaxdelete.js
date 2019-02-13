@@ -12,7 +12,6 @@ $(".removetam").click(function(){
     processData:true,
     contentType:false,
     data:{ id: id, acao:"deletartam"},
-    timeout:1000,
     success:function (resultado) {
 
         $("#recebetam").html(resultado);
@@ -24,7 +23,6 @@ $(".removetam").click(function(){
               processData:true,
               contentType:false,
               data:{ acao: "deletartam"},
-              timeout:1000,
               success:function (resultado) {
                   $("#divtam").html(resultado);
                     }
@@ -38,7 +36,6 @@ $(".removetam").click(function(){
             processData:true,
             contentType:false,
             data:{ acao: "mostrartam"},
-            timeout:1000,
             success:function (resultado) {
               //exibe o conteudo no select
                 $("#selecttam").html(resultado);
