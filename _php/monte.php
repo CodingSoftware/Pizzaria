@@ -2,6 +2,7 @@
 
 require_once 'conector.php';
 
+
 $modal=$_GET['modal'];
 $escolha=$_GET['escolha'];
 

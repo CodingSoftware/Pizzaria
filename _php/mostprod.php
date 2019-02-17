@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<div id="script"><script src='js/ajaxdelete.js'></script></div>
+
 </head>
 
 <?php
@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) {
 
         echo "<option>" . $row["tamanho"]."</option>"."<br>";
 
-      
+
          }
 
 } else {
@@ -37,6 +37,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 if($acao=="deletartam"){
+echo "<script src='js/ajaxdelete.js'></script>";
 echo "<table class='table table-striped'>
       <tr><th>Tamanho</th>
       <th>Qnt. Sabores</th>
@@ -97,6 +98,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 if($acao=="deletarbord"){
+echo "<script src='js/ajaxdelete.js'></script>";
 echo "<table class='table table-striped'>
       <tr><th>Borda</th>
       <th>Valor</th>
@@ -155,6 +157,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 if($acao=="deletarsabor"){
+echo "<script src='js/ajaxdelete.js'></script>";
 echo "<table class='table table-striped'>
       <tr><th>Sabor</th>
       <th>Valor</th>
@@ -212,6 +215,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 if($acao=="deletarbebida"){
+echo "<script src='js/ajaxdelete.js'></script>";
 echo "<table class='table table-striped'>
       <tr><th>Bebida</th>
       <th>Valor</th>
@@ -267,6 +271,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 if($acao=="deletarentrega"){
+echo "<script src='js/ajaxdelete.js'></script>";
 echo "<table class='table table-striped'>
       <tr><th>Entrega</th>
       <th>Valor</th>
