@@ -17,10 +17,7 @@ $(document).ready(function(){
 
     });
 
-
-
-
-    $("#deletetamanho").click(function(){
+  $("#deletetamanho").click(function(){
     $.ajax({
       url:'_php/mostprod.php',
       type:'get',
