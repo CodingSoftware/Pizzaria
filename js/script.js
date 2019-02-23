@@ -158,21 +158,34 @@ $(".salvar-pagamento").click(function(){
 
   };
 
-  
-  jQuery(document).ready(function(){
-		jQuery('#ajax_form').submit(function(){
-			var dados = jQuery( this ).serialize();
 
-			jQuery.ajax({
-				type: "POST",
-				url: "index.php",
-				data: dados,
-				success: function( data )
-				{
-					alert( data );
-				}
-			});
 
-			return false;
-		});
-	});
+
+
+
+  $(document).ready(function(){
+
+      $(".selectTam").click(function(){
+        //Tamanho
+          $.ajax({
+
+            url:'_php/montedados.php',
+            type:'get',
+            cache:false,
+            processData:true,
+            contentType:false,
+            data:{ acao: "mostrartam"},
+            timeout:8000,
+            success:function (resultado) {
+              //exibe o conteudo no select
+                $("#ajax_form").html(resultado);
+              console.log("ok");
+            }
+
+      })
+
+
+
+      });
+
+    });

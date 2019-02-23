@@ -39,57 +39,12 @@ header {
 <!-- conteudo do modal -->
 
 <div class="list-group">
+
 <form method="post" action="" id="ajax_form">
-<input type="radio" name="t" value="1" id="f" checked>
-<label for="f">
-<div class="list-group-item card bg-light">
-<div class="card-body text-center">
-<img class="rounded-circle" src="image/tamanho/f.png"
-width="80px" height="80px">
-<p class="card-text">Familia</p>
-
-<p><strong> <?php echo "R$ ".number_format($f,2,",",".")?> </strong></p>
 
 
 
-</div>
-</div>
 
-</label>
-
-<input type="radio" name="t" value="2" id="g">
-<label for="g">
-<div class="list-group-item card bg-light">
-
-<div class="card-body text-center">
-<img class="rounded-circle" src="image/tamanho/g.png"
-width="80px" height="80px">
-<p class="card-text">Grande</p>
-<p><strong><?php echo "R$ ".number_format($g,2,",",".")?></strong></p>
-</div>
-</div>
-</label>
-<input type="radio" name="t" value="3" id="m" checked>
-<label for="m">
-<div class="list-group-item card bg-light">
-<div class="card-body text-center">
-<img class="rounded-circle" src="image/tamanho/g.png"
-width="80px" height="80px">
-<p class="card-text">Média</p>
-<p><strong><?php echo "R$ ".number_format($m,2,",",".")?></strong></p>
-</div>
-</div>
-</label>
-<input type="radio" name="t" value="4" id="p" checked>
-<label for="p">
-<div class="list-group-item card bg-light">
-<div class="card-body text-center">
-<img class="rounded-circle" src="image/tamanho/g.png"
-width="80px" height="80px">
-<p class="card-text">Pequena</p>
-<p><strong><?php echo "R$ ".number_format ($p,2,",",".")?></strong></p>
-</div>
-</div>
 </div>
 
 
@@ -100,6 +55,8 @@ width="80px" height="80px">
 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 <input type="submit" value="Salvar" class="btn btn-success salvar-tam">
 </form>
+
+
 </div>
 </div>
 </div>
@@ -127,18 +84,6 @@ width="80px" height="80px">
 <img class="rounded-circle" src="image/borda/normal.jpg">
 <p class="card-text">Normal</p>
 <p><strong><?php echo "R$ ".number_format ($n,2,",",".") ?></strong></p>
-</div>
-</div>
-</label>
-
-<input type="radio" name="b" value="2" id="r" checked>
-<label for="r">
-
-<div class="list-group-item card bg-light">
-<div class="card-body text-center">
-<img class="rounded-circle" src="image/borda/recheada.jpg">
-<p class="card-text">Recheada</p>
-<p><strong><?php echo "R$ ".number_format ($r,2,",",".") ?></strong></p>
 </div>
 </div>
 </label>
@@ -303,83 +248,22 @@ width="80px" height="80px">
 </div>
 </div>
 
-	<div class="container" id="monte">
+
+
+
+  <div class="container" id="monte">
 
     			<div class="card bg-light">
-          <?php
-
-          $t=$_POST['t'];
 
 
 
-      if($t==0){
-						echo	"<div class='card-body mt text-center'>
+
+
+    <div class='card-body mt text-center'>
         					<img class='rounded-circle' src='image/home/caixa.jpg'>
         					<p class='card-text'>Tamanho</p>
-                  <button type='button' class='btn btn-primary'
-                  data-toggle='modal' data-target='#ModalTamanho'>
-                  Selecionar</button></div>";
-}else{
-switch ($t) {
-    case '1':
-     $t=$f;
-      echo"<div class='card-body text-center'>
-           <form method='post' action='monte-sua-pizza.php'>
-           <img class='rounded-circle' src='image/tamanho/f.png'
-           width='80px' height='80px'>
-           <p class='card-text'>Família</p><p><strong>"."R$ ".number_format($f,2,",",".")."</strong></p>
-           <input type='submit' value='Remover'
-           class='btn btn-danger del'>
-           <input type='radio' name='t' value='0'></div>
-           </form>";
-
-   break;
-
-    case '2':
-    $t=$g;
-     echo"<div class='card-body text-center'>
-          <form method='post' action='monte-sua-pizza.php'>
-          <img class='rounded-circle' src='image/tamanho/g.png'
-          width='80px' height='80px'>
-          <p class='card-text'>Grande</p><p><strong>"."R$ ".number_format($g,2,",",".")."</strong></p>
-          <input type='submit' value='Remover'
-          class='btn btn-danger del'>
-          <input type='radio' name='t' value='0'></div>
-          </form>";
-
-    break;
-
-    case '3':
-    $t=$m;
-     echo"<div class='card-body text-center'>
-          <form method='post' action='monte-sua-pizza.php'>
-          <img class='rounded-circle' src='image/tamanho/g.png'
-          width='80px' height='80px'>
-          <p class='card-text'>Media</p><p><strong>"."R$ ".number_format($m,2,",",".")."</strong></p>
-          <input type='submit' value='Remover'
-          class='btn btn-danger del'>
-          <input type='radio' name='t' value='0'></div>
-          </form>";
-
-    break;
-
-      case '4':
-      $t=$p;
-       echo"<div class='card-body text-center'>
-            <form method='post' action='monte-sua-pizza.php'>
-            <img class='rounded-circle' src='image/tamanho/g.png'
-            width='80px' height='80px'>
-            <p class='card-text'>Pequena</p><p><strong>"."R$ ".number_format($p,2,",",".")."</strong></p>
-            <input type='submit' value='Remover'
-            class='btn btn-danger del'>
-            <input type='radio' name='t' value='0'></div>
-            </form>";
-
-      break;
-}
-
-}
-?>
+                  <button type='button' class='btn btn-primary selectTam'
+data-toggle='modal' data-target='#ModalTamanho'>Selecionar</button></div>
 
 
       		</div>
@@ -392,50 +276,14 @@ switch ($t) {
 
 					<div class="card bg-light">
 
-			<?php
-          $b=$_POST['b'];
-      if($b==0){
-						echo	"<div class='card-body mt text-center'>
+
+						<div class='card-body mt text-center'>
         					<img class='rounded-circle' src='image/home/borda.png'>
         					<p class='card-text'>Borda</p>
                   <button type='button' class='btn btn-primary'
                   data-toggle='modal' data-target='#ModalBorda'>
-                  Selecionar</button></div>";
-}else{
-switch ($b) {
-    case '1':
-     $b=$n;
-      echo"<div class='card-body text-center'>
-           <form method='post' action='monte-sua-pizza.php'>
-           <img class='rounded-circle' src='image/borda/normal.jpg'
-           width='80px' height='80px'>
-           <p class='card-text'>Normal</p><p><strong>"."R$ ".number_format($n,2,",",".")."</strong></p>
-           <input type='submit' value='Remover'
-           class='btn btn-danger del'>
-           <input type='radio' name='b' value='0'></div>
-           </form>";
+                  Selecionar</button></div>
 
-   break;
-
-    case '2':
-    $b=$r;
-     echo"<div class='card-body text-center'>
-          <form method='post' action='monte-sua-pizza.php'>
-          <img class='rounded-circle' src='image/borda/recheada.jpg'
-          width='80px' height='80px'>
-          <p class='card-text'>Recheada</p><p><strong>"."R$ ".number_format($r,2,",",".")."</strong></p>
-          <input type='submit' value='Remover'
-          class='btn btn-danger del'>
-          <input type='radio' name='b' value='0'></div>
-          </form>";
-
-    break;
-
-
-}
-
-}
-?>
 
 					  </div>
 					<div class="card bg-light">
