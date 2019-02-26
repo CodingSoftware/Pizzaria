@@ -15,7 +15,10 @@ $(document).ready(function(){
       });
 
 
+$(".removertam").click(function(){
+    $(".card-selecionartam").html("<img class='rounded-circle' src='image/home/caixa.jpg'><p class='card-text'>Tamanho</p><button type='button' class='btn btn-primary selectTam'data-toggle='modal' data-target='#ModalTamanho'>Selecionar</button>")
 
+})
 //Escuta Ações no botao Salvar do card tamanho
 $(".salvar-tam").click(function(){
 
@@ -23,7 +26,28 @@ $(".salvar-tam").click(function(){
   if ($(".list-group-item").hasClass("active")) {
 
 
-     $(".active").removeClass( "active" );
+
+                   var form = new FormData($("#ajax_form")[0]);
+                   console.log(form)
+                     $.ajax({
+                       url:'_php/montedados.php',
+                       type:'post',
+                       datatype:'json',
+                       cache:false,
+                       processData:false,
+                       contentType:false,
+                       data:form,
+                       success:function (resultado) {
+                           $(".card-selecionartam").html(resultado)
+                         }
+               });
+
+               $(".alert-tam").html('<div class="alert alert-success alert-dismissible"><a href="#" class="close" data-dismiss="alert"aria-label="close">&times;</a> Ok, vamos escolher agora a borda.</div>');
+
+             setTimeout(function () {
+             $(".alert-tam").html("");
+             $("#ModalTamanho").modal('hide')
+           }, 1000);
 
   }
 //se não
@@ -36,6 +60,9 @@ setTimeout(function () {
   $(".alert-tam").html("");
 }, 5000);
       }
+
+
+
 	});
 
 
@@ -83,24 +110,5 @@ setTimeout(function () {
 
 
 
-            $(".salvar-tam").click(function(){
-
-
-              var form = new FormData($("#ajax_form")[0]);
-              console.log(form)
-                $.ajax({
-                  url:'_php/montedados.php',
-                  type:'post',
-                  datatype:'json',
-                  cache:false,
-                  processData:false,
-                  contentType:false,
-                  data:form,
-                  success:function (resultado) {
-                      
-                    }
-          });
-
-        })
 
         });

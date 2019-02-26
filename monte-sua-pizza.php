@@ -261,7 +261,7 @@ header {
 
 
 
-    <div class='card-body mt text-center'>
+    <div class='card-body mt text-center card-selecionartam'>
         					<img class='rounded-circle' src='image/home/caixa.jpg'>
         					<p class='card-text'>Tamanho</p>
                   <button type='button' class='btn btn-primary selectTam'

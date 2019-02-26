@@ -82,8 +82,12 @@ height: 20%
 
 
 
-.alert{
+.alert-tam{
   margin: auto;
+	z-index: 100;
+	position: fixed;
+	width: 465px;
+	top:1%;
 
 }
 .modal-footer button{

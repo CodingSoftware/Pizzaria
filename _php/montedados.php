@@ -1,7 +1,7 @@
 <?php
 require_once 'conector.php';
 
-if($_POST['acao'] != 0 || ""){
+if($_POST['acao'] != ""){
   $acao = $_POST['acao'];
 }else {
 
@@ -10,8 +10,8 @@ $acao = $_GET["acao"];
 
 
 
-$selecionado=$_POST['selecionado'];
-echo   $selecionado ;
+$selecionado = $_POST['selecionado'];
+
 
 if ($acao == mostrartam) {
 
@@ -41,6 +41,7 @@ if (mysqli_num_rows($result) > 0) {
         width='80px' height='80px'>
         <p class='card-text'>$tamanho</p>
         <p><strong>$valor</strong></p>
+
 
 
 
@@ -85,6 +86,8 @@ if (mysqli_num_rows($result) > 0) {
 
         <p><strong>$valor</strong></p>
 
+
+        <buttom class='btn btn-success removertam'>Remover</buttom>
 
 
 
