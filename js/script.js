@@ -28,7 +28,6 @@ $(".salvar-tam").click(function(){
 
 
                    var form = new FormData($("#ajax_form")[0]);
-                   console.log(form)
                      $.ajax({
                        url:'_php/montedados.php',
                        type:'post',
@@ -39,6 +38,7 @@ $(".salvar-tam").click(function(){
                        data:form,
                        success:function (resultado) {
                            $(".card-selecionartam").html(resultado)
+
                          }
                });
 
@@ -97,7 +97,8 @@ setTimeout(function () {
             timeout:8000,
             success:function (resultado) {
               //exibe o conteudo no select
-                $("#ajax_form").html(resultado);
+                $("#ajax_form").html(resultado + '<script src="js/script.js"></script>');
+
 
             }
 

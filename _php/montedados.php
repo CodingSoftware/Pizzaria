@@ -102,5 +102,5 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo ". results";
 }
+
 }
-echo "<script src='js/script.js'></script>";
