@@ -80,7 +80,18 @@ height: 20%
     top: -15px;
 }
 
+.alert{
+		position: fixed;
+		margin: auto;
+}
+.alert-dismissible .close{
+	padding: .5rem .9rem;
+}
 
+.alert-dismissible {
+padding-right: 2.6rem;
+
+}
 
 .alert-tam{
   margin: auto;
