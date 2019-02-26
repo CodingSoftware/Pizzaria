@@ -134,7 +134,7 @@ top:-3px;
 
 }
 
-input[type=checkbox], input[type=radio]{
+input[type=checkbox], input[type=radio], input[type=txt]{
 
 display:none;
 }

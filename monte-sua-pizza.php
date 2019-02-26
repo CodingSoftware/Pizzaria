@@ -20,6 +20,9 @@ header {
   <body>
 
 <?php require_once('header.php'); ?>
+
+
+    <script src="js/script.js"></script>
 <link rel="stylesheet" href="css/style.css">
 </nav>
 
@@ -38,23 +41,22 @@ header {
 <div class="modal-body">
 <!-- conteudo do modal -->
 
+
+
+<form id="ajax_form">
 <div class="list-group">
-
-<form method="post" action="" id="ajax_form">
-
-
-
 
 </div>
 
+</form>
 
 <div class="alert-tam"></div>
 <div class="modal-footer">
 
 
 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-<input type="submit" value="Salvar" class="btn btn-success salvar-tam">
-</form>
+<input type="button" value="Salvar" class="btn btn-success salvar-tam">
+
 
 
 </div>
@@ -356,8 +358,3 @@ data-toggle='modal' data-target='#ModalTamanho'>Selecionar</button></div>
 
             </div>
 	           </div>
-
-
-
-
-    <script src="js/script.js"></script>
