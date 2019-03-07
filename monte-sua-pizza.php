@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php require_once('header.php'); ?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -19,7 +20,7 @@ header {
 
   <body>
 
-<?php require_once('header.php'); ?>
+
 
 
     <script src="js/script.js"></script>

@@ -1,4 +1,5 @@
 <!doctype html>
+<?php require_once('header.php'); ?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -13,7 +14,7 @@
       <script src="js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
         <script src="js/form-validation.js"></script></body>
 
-<?php require_once('header.php'); ?>
+
 
     <link href="form-validation.css" rel="stylesheet">
   </head>

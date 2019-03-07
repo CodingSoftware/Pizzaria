@@ -1,4 +1,5 @@
 <!doctype html>
+<?php require_once( 'header.php');?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7,7 +8,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Contato</title>
-<?php require_once( 'header.php');?>
+
     <!-- Bootstrap core CSS -->
 <body>
 
