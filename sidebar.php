@@ -15,9 +15,7 @@
 <script src="js/sidebar.js"></script>
 <script src="js/ajaxinsert.js"></script>
 <script src="js/ajaxselect.js"></script>
-
-
-
+<link rel="shortcut icon" href="image/favicon.png" width="16px" height="16px"/>
 </head>
 
    <header>

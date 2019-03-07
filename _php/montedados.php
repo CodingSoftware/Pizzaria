@@ -5,7 +5,7 @@ if($_POST['acao'] != ""){
   $acao = $_POST['acao'];
 }else {
 
-$acao = $_GET["acao"];
+$acao = $_GET['acao'];
 }
 
 
@@ -13,7 +13,7 @@ $acao = $_GET["acao"];
 $selecionado = $_POST['selecionado'];
 
 
-if ($acao == mostrartam) {
+if ($acao == "mostrartam") {
 
   $select = "SELECT id, tamanho, qtd_fatias ,qtd_sabores , valor FROM tamanhos";
   $result = mysqli_query($conectar, $select);
@@ -61,7 +61,7 @@ if (mysqli_num_rows($result) > 0) {
 }
 }
 
-if ($acao == selecionartam) {
+if ($acao == "selecionartam") {
 
   $select = "SELECT id, tamanho, qtd_fatias ,qtd_sabores , valor FROM tamanhos where tamanho='$selecionado' ";
   $result = mysqli_query($conectar, $select);

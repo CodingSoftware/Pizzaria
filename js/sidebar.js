@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	console.log("ola")
 
 $("a.side").click(function(){
 

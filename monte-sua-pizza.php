@@ -343,7 +343,7 @@ data-toggle='modal' data-target='#ModalTamanho'>Selecionar</button></div>
                 <div class="card-body mt text-center">
                     <img class="rounded-circle" src="image/valor/valor.png" width="80px" height="80px">
                     <p class="card-text">Valor Total</p>
-					  <p class="card-text"><strong><?php $vt=$t+$b; echo"R$ ".number_format ($vt,2,",",".")?> </strong></p>
+					  <p class="card-text"><strong><?php echo"R$ ".number_format ($ValorTotal,2,",",".")?> </strong></p>
                     <!-- Botão Modal Tamanho -->
 
 

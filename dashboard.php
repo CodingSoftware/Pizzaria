@@ -2,6 +2,7 @@
 <html>
 <head>
 <?php require_once( 'sidebar.php');?>
+<title>Dashboard</title>
 </head>
 
 		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">

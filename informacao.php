@@ -2,6 +2,7 @@
 <html>
 <head>
 <?php require_once('sidebar.php');?>
+<title>Informações</title>
 </head>
 
 

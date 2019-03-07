@@ -9,11 +9,7 @@
 require_once('modal.php');
 require_once('sidebar.php');
 ?>
-
-
-
-
-
+ <title>Produtos</title>
 </head>
 <div id="script"></div>
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
